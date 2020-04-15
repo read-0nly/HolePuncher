@@ -30,7 +30,9 @@ namespace HolePuncher
             textBox3.Text = Encoding.ASCII.GetString(cm.receiveBytes());
         }
 
-        private void button3_Click(object sender, EventArgs e){        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            cm.sendString("Follow the white rabbit", textBox1.Text.Trim());
             cm.sendString("Follow the white rabbit", textBox1.Text.Trim());
             textBox3.Text = Encoding.ASCII.GetString(cm.receiveBytes());
         }
